@@ -25,3 +25,9 @@ class Photo(models.Model):
 
     def __str__(self):
         return self.description
+
+    @classmethod
+    def search_by_category(cls,search_term):
+        photos = cls.objects.filter(category__name__icontains = search_term)   
+        # We filter the model data using the __icontains query filter
+        return photos            
