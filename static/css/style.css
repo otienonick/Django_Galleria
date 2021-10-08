@@ -194,6 +194,10 @@ img:hover{
     
 }
 
+.btn:active{
+  box-shadow: none;
+  transform: scale(0.98);
+}
 
   span{
     background-color: #fff;
