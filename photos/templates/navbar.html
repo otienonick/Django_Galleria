@@ -29,12 +29,11 @@
                  </a>
                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                    <a class="dropdown-item text-dark" href="{% url 'gallery' %}">All</a>
-                   <a class="dropdown-item text-dark" href="#"></a>
+                   {%for location in locations%}
+                   <a class="dropdown-item text-dark" href="{% url 'gallery' %}?location={{location.name}}">{{location.name}}</a>
+                   {%endfor%}          
                  </div>
                </div>
-        
- 
- 
  
          </div>
        </nav>
