@@ -189,7 +189,8 @@ img:hover{
     padding: 5px 20px;
     border-radius: 25px;
     text-decoration: none;
-    color: rgb(177, 170, 170);
+    /* color: rgb(177, 170, 170); */
+    color: #fff;
     
 }
 
@@ -197,11 +198,11 @@ img:hover{
   span{
     background-color: #fff;
     height: 100%;
-    width: 20%;
+    width: 12%;
     left: 0;
     bottom: 0;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 30px;
     transition: .5s;
     z-index: -1;
 }
