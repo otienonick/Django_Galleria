@@ -139,6 +139,20 @@ img:hover{
   filter: brightness(50%);
   cursor: pointer;
 }
+
+.no_border{
+  border-radius: 0 !important;
+  border-right-width: 2px;
+  
+
+ }     
+ .btn_white{
+   background-color: #fff;
+   border-radius: 0 !important;
+   outline: none;
+   border: none;
+
+ }
  @media (min-width: 360px) {
 
     
