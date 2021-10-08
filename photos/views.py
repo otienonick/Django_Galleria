@@ -23,8 +23,6 @@ def viewPhoto(request,pk):
 
 
     return render(request,'photos/photo.html', {"photo" : photo})
-
-
     
 def search_results(request):
 

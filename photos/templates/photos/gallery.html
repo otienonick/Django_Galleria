@@ -3,7 +3,6 @@
 {% block content %}
 {{block.super}}
 
-<h3 class="text-white mb-5 mt-3">Gallery</h3>
 <div class="container">
 
     <div class="input-group justify-content-center mb-5">
@@ -14,6 +13,9 @@
         </button>
         </form>
       </div>
+      
+      <h3 class="text-white mb-5 mt-3">Gallery</h3>
+
 
     
     <div class="row">
@@ -21,19 +23,21 @@
         <div class="col-md-6 col-lg-3 col-12 col-sm-12">
             <div class="row m-1 mb-3">
                 <div class="card  ">
-                    <div class="card-header">
-                        <h5>{{photo.name}}</h5>
 
-                    </div>
                     <img  class="image-thumbnail img-fluid mt-3" src="{{photo.image.url}}" alt="Card image cap">
+                    <h5 class="centered">{{photo.name}}</h5>
+
                     <div class="card-body">
                       <p class="card-text">Location: {{photo.location.name}}</p>
                       <p class="card-text">Category: {{photo.category.name}}</p>
 
 
                     </div>
-                    <a href="{% url 'photo' photo.id %}"  class="btn btn-outline-dark btn-sm m-1">view more</a>
+                 
                   </div>
+                  <div class="btns mt-2">
+                    <a href="{% url 'photo' photo.id %}" > <span></span> view more</a>
+                    </div>
             </div>
         </div>
         {% empty %}

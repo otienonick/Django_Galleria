@@ -23,3 +23,9 @@ copyBtns.forEach(btn => btn.addEventListener('click', ()=>{
   navigator.clipboard.writeText(imageuRL)
   btn.textContent = 'copied'
 }))
+
+$(document).ready(function() {
+  $('.image-thumbnail').hover(function() {
+      $(this).next('.centered').toggle();
+  });
+});
