@@ -19,8 +19,7 @@ console.log(copyBtns)
 copyBtns.forEach(btn => btn.addEventListener('click', ()=>{
   console.log('click');
   const imageuRL= btn.getAttribute('data-url')
-  url = window.location.host;
   console.log(imageuRL)
-  navigator.clipboard.writeText( url + imageuRL)
+  navigator.clipboard.writeText(imageuRL)
   btn.textContent = 'copied'
 }))
