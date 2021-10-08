@@ -12,3 +12,15 @@ $(function(){
       }, 500)
     });
   });
+
+
+const copyBtns =[... document.getElementsByClassName('copy-btn')];
+console.log(copyBtns) 
+copyBtns.forEach(btn => btn.addEventListener('click', ()=>{
+  console.log('click');
+  const imageuRL= btn.getAttribute('data-url')
+  url = window.location.host;
+  console.log(imageuRL)
+  navigator.clipboard.writeText( url + imageuRL)
+  btn.textContent = 'copied'
+}))
